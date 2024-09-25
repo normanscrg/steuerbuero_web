@@ -1,27 +1,204 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-color: #f9f6f2; /* Helles Beige für Hintergrund */
+  --accent-color: #f0d9b5; /* Warmer Akzent für Überschriften und Bereiche */
+  --background-color: #ffffff; /* Weißer Seitenhintergrund */
+  --text-color: #333333; /* Dunkler Text für gute Lesbarkeit */
+  --cta-color: #00509e; /* Kräftiges Blau für Call-to-Action Buttons */
+  --cta-hover-color: #003f7d; /* Dunkleres Blau für Button Hover */
+  --link-color: #333; /* Standard Link Farbe */
+  --link-hover-color: #00509e; /* Link Hover Farbe */
+  --heading-margin: 2rem; /* Abstand unter Überschriften */
+  --text-margin: 1.5rem; /* Abstand unter Texten */
+  --section-padding: 4rem; /* Padding für Sektionen */
+  --input-border-color: #ddd; /* Border für Formulare */
+  --image-height: 400px; /* Einheitliche Höhe für Bilder */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Hauptlayout */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6; /* Lesbarkeit verbessern */
+  padding-top: 100px; /* Platz für Navbar schaffen */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Layout für Inhalte */
+section.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--section-padding);
+  background-color: var(--background-color);
+}
+
+h1, h2, h3 {
+  color: var(--accent-color);
+  margin-bottom: var(--heading-margin);
+}
+
+p, ul {
+  margin-bottom: var(--text-margin);
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Buttons */
+button {
+  background-color: var(--cta-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--cta-hover-color);
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Navbar */
+header.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+nav ul li {
+  margin: 0 1.5rem;
+}
+
+nav ul li a {
+  color: var(--link-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+/* Banner */
+/* Banner */
+.main-banner {
+  background-image: url('/images/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+}
+
+.main-banner h1 {
+  font-size: 3rem;
+  opacity: 0;
+  transform: translateX(100%); /* Startet rechts außerhalb des Bildschirms */
+  animation: slideIn 1s forwards ease-in-out; /* Fliegt in 1 Sekunde ein */
+  animation-delay: 0.5s; /* Wartet 0.5 Sekunden, bevor sie einfliegt */
+  margin-bottom: var(--heading-margin);
+}
+
+@keyframes slideIn {
+  100% {
+    opacity: 1; /* Sichtbar */
+    transform: translateX(0); /* Endet an der normalen Position */
   }
+}
+
+.main-banner p {
+  font-size: 1.5rem;
+  margin-bottom: var(--text-margin);
+}
+
+/* Zusätzliche Bilder für Seiten */
+.content-image {
+  width: 100%;
+  height: var(--image-height);
+  object-fit: cover;
+  margin-bottom: var(--text-margin);
+}
+
+/* Formulare */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: var(--cta-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--cta-hover-color);
+}
+
+/* Footer */
+footer.footer {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 0 1.5rem;
+}
+
+footer ul li a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: var(--link-hover-color);
 }
