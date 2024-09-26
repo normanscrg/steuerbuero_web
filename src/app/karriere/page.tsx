@@ -1,3 +1,4 @@
+import Link from 'next/link';
 const Karriere = () => {
   return (
     <section className="py-16 mt-16"> {/* Added mt-16 for navbar spacing */}
@@ -21,9 +22,11 @@ const Karriere = () => {
               <li className="text-lg">Erstellung von Jahresabschlüssen und Steuererklärungen</li>
               <li className="text-lg">Unterstützung bei Betriebsprüfungen</li>
             </ul>
+            <Link href="/kontakt">
             <button className="bg-cta text-white py-2 px-4 rounded hover:bg-cta-hover transition">
               Jetzt bewerben
             </button>
+            </Link>
           </div>
 
           {/* Job 2 */}
@@ -37,9 +40,11 @@ const Karriere = () => {
               <li className="text-lg">Erstellung von Steuererklärungen</li>
               <li className="text-lg">Kommunikation mit Mandanten</li>
             </ul>
+            <Link href="/kontakt">
             <button className="bg-cta text-white py-2 px-4 rounded hover:bg-cta-hover transition">
               Jetzt bewerben
             </button>
+            </Link>
           </div>
         </div>
 
