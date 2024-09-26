@@ -44,7 +44,7 @@ export default function Kontakt() {
           {/* Address & Opening Hours */}
           <div className="p-6 bg-gray-100 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Adresse</h2>
-            <p className="text-lg text-gray-700 mb-6">Musterstraße 123, 10115 Berlin</p>
+            <p className="text-lg text-gray-700 mb-6">Marienhöhe 5a, 74942 Billigheim</p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Öffnungszeiten</h2>
             <ul className="list-disc list-inside text-lg text-gray-700">
