@@ -1,20 +1,20 @@
+import Navbar from './components/navbar';
+import Footer from './components/footer';
 import './globals.css';
-import { ReactNode } from 'react';
-import Navbar from './components/navbar'; // Importiere die Navbar-Komponente
-import Footer from './components/footer'; // Importiere die Footer-Komponente
 
-export const metadata = {
-  title: 'Steuerkanzlei Scheurig',
-  description: 'Steuerberatung und Unternehmensberatung',
-};
-
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="de">
-      <body>
-        <Navbar /> {/* Navbar auf allen Seiten */}
-        <main>{children}</main>
-        <Footer /> {/* Footer auf allen Seiten */}
+      <body className="min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-grow max-w-screen-xl mx-auto px-4 py-8">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

@@ -1,22 +1,78 @@
-export default function LeistungenPage() {
-    return (
-      <section className="content">
-        <h1>Unsere Leistungen</h1>
+const Leistungen = () => {
+  return (
+    <section className="py-16 bg-gray-100">
+      <div className="container mx-auto px-4">
+        <h1 className="text-4xl font-bold text-accent mb-8 text-center">
+          Unsere Leistungen
+        </h1>
+        <p className="text-lg text-gray-700 mb-6 text-center">
+          Wir bieten umfassende Dienstleistungen, die auf die spezifischen Bedürfnisse unserer Mandanten zugeschnitten sind.
+        </p>
         
-        <h2>Steuerberatung</h2>
-        <p>Unsere Steuerberatung umfasst alle steuerlichen Fragestellungen für Privatpersonen und Unternehmen. Wir analysieren Ihre aktuelle Situation und erarbeiten Lösungen, die optimal zu Ihnen passen.</p>
-        <ul>
-          <li>Einkommensteuererklärung</li>
-          <li>Umsatzsteuerberatung</li>
-          <li>Körperschaftsteuer und Gewerbesteuer</li>
-        </ul>
-        
-        <h2>Rechnungswesen</h2>
-        <p>Finanzbuchhaltung, Lohnbuchhaltung, und Anlagenbuchhaltung – Wir sorgen dafür, dass Ihre Buchhaltung korrekt und effizient geführt wird. Außerdem erhalten Sie regelmäßige Analysen, um Ihre wirtschaftlichen Entscheidungen fundiert treffen zu können.</p>
-  
-        <h2>Betriebswirtschaftliche Beratung</h2>
-        <p>Von der Existenzgründung über Liquiditätsplanung bis hin zur Unternehmensentwicklung stehen wir Ihnen beratend zur Seite. Gemeinsam entwickeln wir Strategien für nachhaltigen Erfolg.</p>
-      </section>
-    );
-  }
-  
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Leistung 1 */}
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold mb-4">Steuerberatung</h2>
+            <p className="text-gray-700 mb-4">
+              Unser erfahrenes Team unterstützt Sie bei allen Fragen rund um die Steuererklärung und Steuerplanung.
+            </p>
+            <ul className="list-disc pl-5 mb-4">
+              <li className="text-lg">Erstellung von Steuererklärungen</li>
+              <li className="text-lg">Optimierung der Steuerlast</li>
+              <li className="text-lg">Beratung für Unternehmen und Privatpersonen</li>
+            </ul>
+          </div>
+
+          {/* Leistung 2 */}
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold mb-4">Buchhaltung</h2>
+            <p className="text-gray-700 mb-4">
+              Wir übernehmen Ihre laufende Buchhaltung und erstellen Ihre Monats- und Jahresabschlüsse.
+            </p>
+            <ul className="list-disc pl-5 mb-4">
+              <li className="text-lg">Finanz- und Lohnbuchhaltung</li>
+              <li className="text-lg">Monatliche Reports</li>
+              <li className="text-lg">Erstellung von Jahresabschlüssen</li>
+            </ul>
+          </div>
+
+          {/* Leistung 3 */}
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold mb-4">Unternehmensberatung</h2>
+            <p className="text-gray-700 mb-4">
+              Wir beraten Sie bei der Gründung, Umstrukturierung und Expansion Ihres Unternehmens.
+            </p>
+            <ul className="list-disc pl-5 mb-4">
+              <li className="text-lg">Beratung bei Unternehmensgründungen</li>
+              <li className="text-lg">Steueroptimierung und Rechtsformwahl</li>
+              <li className="text-lg">Begleitung bei Betriebsprüfungen</li>
+            </ul>
+          </div>
+
+          {/* Leistung 4 */}
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold mb-4">Lohnabrechnung</h2>
+            <p className="text-gray-700 mb-4">
+              Wir kümmern uns um die fristgerechte und korrekte Abwicklung Ihrer Lohn- und Gehaltsabrechnungen.
+            </p>
+            <ul className="list-disc pl-5 mb-4">
+              <li className="text-lg">Erstellung der Lohnabrechnungen</li>
+              <li className="text-lg">Abwicklung von Sozialversicherungsbeiträgen</li>
+              <li className="text-lg">Kommunikation mit Behörden</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Additional Info Section */}
+        <div className="mt-12 text-center">
+          <h2 className="text-2xl font-bold mb-4">Individuelle Beratung</h2>
+          <p className="text-lg text-gray-700 mb-6">
+            Wir bieten Ihnen eine individuelle und maßgeschneiderte Beratung, die auf Ihre Bedürfnisse abgestimmt ist.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Leistungen;

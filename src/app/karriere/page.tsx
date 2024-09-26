@@ -1,21 +1,58 @@
-export default function KarrierePage() {
-    return (
-      <section>
-        <h1>Karriere</h1>
-        <p>
-          Sie möchten Teil unseres Teams werden? Hier finden Sie unsere aktuellen Stellenangebote.
+const Karriere = () => {
+  return (
+    <section className="py-16 bg-gray-100">
+      <div className="container mx-auto px-4">
+        <h1 className="text-4xl font-bold text-accent mb-8 text-center">
+          Karriere bei uns
+        </h1>
+        <p className="text-lg text-gray-700 mb-6 text-center">
+          Werden Sie Teil unseres dynamischen Teams und gestalten Sie Ihre Karriere im Bereich Steuerberatung.
         </p>
-        <h2>Offene Stellen</h2>
-        <ul>
-          <li><strong>Steuerberater (m/w/d):</strong> Mindestens 5 Jahre Berufserfahrung im Steuerrecht.</li>
-          <li><strong>Buchhalter (m/w/d):</strong> Erfahrung in der Lohn- und Finanzbuchhaltung.</li>
-        </ul>
-        <h2>Bewerbung</h2>
-        <p>
-          Senden Sie Ihre Bewerbung bitte per E-Mail an <strong>karriere@steuerkanzlei-scheurig.de</strong> 
-          oder nutzen Sie unser Bewerbungsportal.
-        </p>
-      </section>
-    );
-  }
-  
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Job 1 */}
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold mb-4">Steuerberater (m/w/d)</h2>
+            <p className="text-gray-700 mb-4">
+              Wir suchen einen erfahrenen Steuerberater, der unsere Kunden in steuerlichen Angelegenheiten umfassend beraten kann.
+            </p>
+            <ul className="list-disc pl-5 mb-4">
+              <li className="text-lg">Beratung von Unternehmen und Privatpersonen</li>
+              <li className="text-lg">Erstellung von Jahresabschlüssen und Steuererklärungen</li>
+              <li className="text-lg">Unterstützung bei Betriebsprüfungen</li>
+            </ul>
+            <button className="bg-cta text-white py-2 px-4 rounded hover:bg-cta-hover transition">
+              Jetzt bewerben
+            </button>
+          </div>
+
+          {/* Job 2 */}
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold mb-4">Steuerfachangestellte (m/w/d)</h2>
+            <p className="text-gray-700 mb-4">
+              Wir suchen eine/n Steuerfachangestellte/n, die/der uns bei der Erstellung von Steuererklärungen und der Betreuung von Mandanten unterstützt.
+            </p>
+            <ul className="list-disc pl-5 mb-4">
+              <li className="text-lg">Vorbereitung von Buchhaltungen</li>
+              <li className="text-lg">Erstellung von Steuererklärungen</li>
+              <li className="text-lg">Kommunikation mit Mandanten</li>
+            </ul>
+            <button className="bg-cta text-white py-2 px-4 rounded hover:bg-cta-hover transition">
+              Jetzt bewerben
+            </button>
+          </div>
+        </div>
+
+        {/* Additional Info Section */}
+        <div className="mt-12 text-center">
+          <h2 className="text-2xl font-bold mb-4">Warum bei uns arbeiten?</h2>
+          <p className="text-lg text-gray-700 mb-6">
+            Wir bieten nicht nur eine attraktive Vergütung, sondern auch ein modernes Arbeitsumfeld und zahlreiche Weiterbildungsmöglichkeiten.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Karriere;

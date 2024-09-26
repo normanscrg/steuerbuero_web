@@ -1,27 +1,33 @@
-export default function KontaktPage() {
-    return (
-      <section className="content">
-        <h1>Kontaktieren Sie uns</h1>
-        <form className="contact-form">
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-  
-          <label htmlFor="email">E-Mail:</label>
-          <input type="email" id="email" name="email" required />
-  
-          <label htmlFor="message">Nachricht:</label>
-          <textarea id="message" name="message" required></textarea>
-  
-          <button type="submit">Absenden</button>
+const Kontakt = () => {
+  return (
+    <section className="py-16">
+      <div className="container mx-auto px-4">
+        <h1 className="text-4xl font-bold text-accent mb-8 text-center">
+          Kontaktieren Sie uns
+        </h1>
+        <p className="text-lg text-gray-700 mb-6 text-center">
+          Füllen Sie das untenstehende Formular aus, um mit uns in Kontakt zu treten.
+        </p>
+        <form className="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+          <div className="mb-4">
+            <label htmlFor="name" className="block text-sm font-bold mb-2">Name</label>
+            <input type="text" id="name" className="w-full px-3 py-2 border border-gray-300 rounded" placeholder="Ihr Name" />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="email" className="block text-sm font-bold mb-2">E-Mail</label>
+            <input type="email" id="email" className="w-full px-3 py-2 border border-gray-300 rounded" placeholder="Ihre E-Mail-Adresse" />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="message" className="block text-sm font-bold mb-2">Nachricht</label>
+            <textarea id="message" className="w-full px-3 py-2 border border-gray-300 rounded" placeholder="Ihre Nachricht" rows={5}></textarea>
+          </div>
+          <button className="w-full bg-cta text-white py-2 rounded hover:bg-cta-hover transition">
+            Nachricht senden
+          </button>
         </form>
-  
-        <h2>Unsere Kontaktinformationen</h2>
-        <p><strong>Adresse:</strong> Musterstraße 123, 12345 Musterstadt</p>
-        <p><strong>Telefon:</strong> 0123 456789</p>
-        <p><strong>E-Mail:</strong> kontakt@steuerkanzlei-scheurig.de</p>
-        <h3>Öffnungszeiten</h3>
-        <p>Montag bis Freitag: 08:00 - 17:00 Uhr</p>
-      </section>
-    );
-  }
-  
+      </div>
+    </section>
+  );
+};
+
+export default Kontakt;
