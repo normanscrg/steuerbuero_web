@@ -1,7 +1,7 @@
 const Karriere = () => {
   return (
-    <section className="py-16 bg-gray-100">
-      <div className="container mx-auto px-4">
+    <section className="py-16 mt-16"> {/* Added mt-16 for navbar spacing */}
+      <div className="container mx-auto max-w-7xl px-6 bg-white/80 p-12 rounded-lg shadow-lg">
         <h1 className="text-4xl font-bold text-accent mb-8 text-center">
           Karriere bei uns
         </h1>
