@@ -11,7 +11,7 @@ const Leistungen = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Leistung 1 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl">
             <h2 className="text-2xl font-bold mb-4">Steuerberatung</h2>
             <p className="text-gray-700 mb-4">
               Unser erfahrenes Team unterstützt Sie bei allen Fragen rund um die Steuererklärung und Steuerplanung.
@@ -24,7 +24,7 @@ const Leistungen = () => {
           </div>
 
           {/* Leistung 2 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl">
             <h2 className="text-2xl font-bold mb-4">Buchhaltung</h2>
             <p className="text-gray-700 mb-4">
               Wir übernehmen Ihre laufende Buchhaltung und erstellen Ihre Monats- und Jahresabschlüsse.
@@ -37,7 +37,7 @@ const Leistungen = () => {
           </div>
 
           {/* Leistung 3 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl">
             <h2 className="text-2xl font-bold mb-4">Unternehmensberatung</h2>
             <p className="text-gray-700 mb-4">
               Wir beraten Sie bei der Gründung, Umstrukturierung und Expansion Ihres Unternehmens.
@@ -50,7 +50,7 @@ const Leistungen = () => {
           </div>
 
           {/* Leistung 4 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl">
             <h2 className="text-2xl font-bold mb-4">Lohnabrechnung</h2>
             <p className="text-gray-700 mb-4">
               Wir kümmern uns um die fristgerechte und korrekte Abwicklung Ihrer Lohn- und Gehaltsabrechnungen.

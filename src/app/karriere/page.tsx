@@ -11,7 +11,7 @@ const Karriere = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Job 1 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl">
             <h2 className="text-2xl font-bold mb-4">Steuerberater (m/w/d)</h2>
             <p className="text-gray-700 mb-4">
               Wir suchen einen erfahrenen Steuerberater, der unsere Kunden in steuerlichen Angelegenheiten umfassend beraten kann.
@@ -27,7 +27,7 @@ const Karriere = () => {
           </div>
 
           {/* Job 2 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl">
             <h2 className="text-2xl font-bold mb-4">Steuerfachangestellte (m/w/d)</h2>
             <p className="text-gray-700 mb-4">
               Wir suchen eine/n Steuerfachangestellte/n, die/der uns bei der Erstellung von Steuererklärungen und der Betreuung von Mandanten unterstützt.
