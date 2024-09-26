@@ -11,14 +11,15 @@ export async function POST(req: NextRequest) {
   try {
     // SMTP-Konfiguration mit Umgebungsvariablen
     const transporter = nodemailer.createTransport({
-      host: 'smtp.mail.yahoo.com',
-      port: 465,
-      secure: true, // true für SSL
-      auth: {
-        user: process.env.YAHOO_EMAIL,    // E-Mail aus Umgebungsvariablen
-        pass: process.env.YAHOO_PASSWORD, // Passwort aus Umgebungsvariablen
-      },
-    });
+        host: 'smtp.mail.yahoo.com',
+        port: 465,        // SSL Port
+        secure: true,     // true für SSL
+        auth: {
+          user: process.env.YAHOO_EMAIL,    // E-Mail aus Umgebungsvariablen
+          pass: process.env.YAHOO_PASSWORD, // Passwort aus Umgebungsvariablen
+        },
+      });
+      
 
     const mailOptions = {
       from: `"${name}" <${email}>`, // Absender (vom Formular)
