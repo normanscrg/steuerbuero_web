@@ -22,8 +22,8 @@ const HomePage = () => {
         </Link>
       </div>
 
-      {/* Kanzlei Card - Positioned at 60% from the top and 60% from the left */}
-      <div className="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-90 text-gray-900 p-4 rounded-lg shadow-lg w-80 h-48 flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      {/* Kanzlei Card - Positioned at 70% from the top and 80% from the left, scaled 150% */}
+      <div className="absolute top-[70%] left-[80%] transform scale-150 -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-90 text-gray-900 p-4 rounded-lg shadow-lg w-80 h-48 flex flex-col justify-between transition-transform duration-300 hover:scale-[1.55] hover:shadow-xl">
         <div>
           <h2 className="text-xl font-semibold mb-2 text-center">Kanzlei</h2>
           <p className="text-sm text-gray-700 mb-2 text-center">
