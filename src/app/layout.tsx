@@ -9,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col bg-cover bg-center bg-no-repeat custom-background">
         <Navbar />
         <main className="flex-grow max-w-screen-xl mx-auto px-4 py-8">
           {children}

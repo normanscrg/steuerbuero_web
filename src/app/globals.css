@@ -10,12 +10,14 @@ html, body {
 
 /* Hintergrundbild für die Startseite */
 /* Full-width Hintergrundbild */
-.custom-img {
-  background-image: url('/images/background.jpg'); /* Passe den Pfad zum Bild an */
+/* Hintergrundbild für das gesamte Layout */
+.custom-background {
+  background-image: url('/images/background.jpg'); /* Pfad anpassen */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
+
 
 /* Animationen */
 @keyframes slideIn {
