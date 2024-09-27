@@ -16,6 +16,9 @@ export default function Kontakt() {
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Adresse</h2>
             <p className="text-lg text-gray-700 mb-6">Marienhöhe 5a, 74942 Billigheim</p>
 
+            {/* Trennstrich */}
+            <hr className="border-t border-gray-300 my-6" />
+
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Öffnungszeiten</h2>
             <ul className="list-disc list-inside text-lg text-gray-700">
               <li className="mb-2">Mo - Fr: 09:00 - 18:00 Uhr</li>

@@ -1,5 +1,3 @@
-import type { Config } from "tailwindcss";
-
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,7 +10,7 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: '#f9f6f2',
-        accent: '#f0d9b5',
+        accent: '#d1b290', // Deutlich dunklerer Beigeton
         cta: '#00509e',
         'cta-hover': '#003f7d',
         link: '#333',
