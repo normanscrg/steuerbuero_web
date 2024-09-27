@@ -12,7 +12,10 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 w-full bg-primary z-50 shadow-lg">
       <nav className="max-w-screen-xl mx-auto flex justify-between items-center p-4">
-        <div className="text-xl font-bold text-accent">Tanja Scheurig Steuerberater</div>
+        {/* Tanja Scheurig Steuerberater - mit Karten-Hintergrund */}
+        <div className="bg-white/90 text-xl font-bold text-accent px-4 py-2 rounded-lg shadow-md">
+          Tanja Scheurig Steuerberater
+        </div>
 
         {/* Hamburger Icon for mobile view */}
         <div className="md:hidden">
