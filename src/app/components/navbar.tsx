@@ -14,7 +14,13 @@ const Navbar = () => {
       <nav className="max-w-screen-xl mx-auto flex justify-between items-center p-4">
         {/* Tanja Scheurig Steuerberater - mit Karten-Hintergrund */}
         <div className="bg-white/90 text-xl font-bold text-accent px-4 py-2 rounded-lg shadow-md">
-          Tanja Scheurig Steuerberater
+        
+            <a
+              href="/"
+            >
+            Tanja Scheurig Steuerberater
+            </a>
+          
         </div>
 
         {/* Hamburger Icon for mobile view */}
